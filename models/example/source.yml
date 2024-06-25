@@ -1,0 +1,13 @@
+# dbt_project.yml
+
+version: 2
+
+sources:
+  - name: 538_football
+    description: "Source data for football matches and rankings from FiveThirtyEight"
+    tables:
+      - name: stg_football_matches
+        description: "Staging table for football matches data"
+      - name: stg_football_rankings
+        description: "Staging table for football rankings data"
+
